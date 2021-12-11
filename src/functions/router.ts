@@ -18,5 +18,15 @@ class Router {
         ).call();
         return calledData;
     }
+    public async getAmountsOut(inputAmount: string | number, token0: string, token1: string) {
+        const calledData = await this.router.methods.getAmountsOut(
+            web3.utils.toWei(inputAmount.toString()),
+            [
+                token0,
+                token1
+            ]
+        ).call();
+        return calledData;
+    }
 }
 export default Router;

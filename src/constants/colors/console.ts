@@ -1,0 +1,5 @@
+export const reset      = '\x1b[0m'
+export const magenta    = '\x1b[35m'
+export const cyan       = '\x1b[36m'
+export const green      = '\x1b[32m'
+export const red        = '\x1b[31m'
